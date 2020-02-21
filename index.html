@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>ToblerHacks</title>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158607018-2"></script>
         <script>
@@ -10,60 +13,59 @@
 
              gtag('config', 'UA-158607018-2');
          </script>
-
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ToblerHacks</title>
+        <!--This is my style sheet-->
         <link rel="stylesheet" href="landing_style.css">
+        <!--Maven Pro Font-->
         <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+        <!--Font Awesome for icons-->
         <script src="https://kit.fontawesome.com/ad24df4c4e.js" crossorigin="anonymous"></script>
+        <!-- W3 CSS-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
     <body>
-        <div class="container demo welcome">
+        <div class="w3-row container demo welcome">
             <div class="landing">
                 <div id="large-header" class="large-header">
                     <canvas id="demo-canvas"></canvas>
-                    <h1 class="main-title"><span class="thin">T o b l e r</span> H a c k s</h1>
-                    <p class="options">
-                        <a class="fas fa-info-circle" href="#content" title="Information"></a>
-                        <a class="far fa-calendar-alt" href="#schedule" title="Schedule"></a>
-                        <a class="fas fa-hand-holding-usd" href="#sponsors" title="Sponsors"></a>
-                        <a class="fas fa-laptop-code" href="#bring" title="What to bring"></a>
-                    </p>
+                    <h1 class="main-title"><span class="thin">Tobler</span> Hacks</h1>
                     <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:3%;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=black" target="_blank"><img src="mlh.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:180%"></a>
                 </div>
             </div>
         </div>
-        <div id="navbar">
+        <div class="w3-bar" id="navbar">
             <i><span class="thin">Tobler</span> Hacks</i>
-            <a href="#schedule">Schedule</a>
-            <a href="#sponsors">Sponsors</a>
-            <a href="#bring">What to Bring</a>
-            <a href="#organizers">Organizers</a>
+            <div class="w3-center">
+                <a href="#schedule" class="w3-bar-item w3-mobile">Schedule</a>
+                <a href="#sponsors" class="w3-bar-item w3-mobile">Sponsors</a>
+                <a href="#bring" class="w3-bar-item w3-mobile">What to Bring</a>
+                <a href="#organizers" class="w3-bar-item w3-mobile">Organizers</a>
+            </div>
           </div>
         <div id="content">
             <div id="about" class="main-content">
                 <h1 class="content-title">About</h1>
                 <p>
-                    <b>WELCOME</b> to ToblerHacks! This is your premier officially unofficial hackathon, held once and only once, so you better not miss it! At this hackathon I expect you all to create something absolutely amazing. All the projects should be winners. I want so see blood, sweat, and tears pour out of you at this event. I expect for all of you to do the best work you have done in your life and I mean it. You will have to provide your own meals, transportation, hardware... pretty much everything. If this doesn't sound like a blast I don't know what is wrong with you honestly. Also scroll down to see when this shibang starts and also write it down in your calender. Tell your friend's you won't be free and not to call because this is the real deal. YOU are a creater, explorer, and experimenter. This is the weekend you can show the WORLD! <i class="fas fa-globe-americas"></i>
+                    <b>WELCOME</b> to ToblerHacks! This is your premier officially unofficial hackathon, held once and only once, so you better not miss it! At this hackathon I expect you all to create something absolutely amazing. All the projects should be winners. I want so see blood, sweat, and tears pour out of you at this event. I expect for all of you to do the best work you have done in your life and I mean it. You will have to provide your own meals, transportation, hardware... pretty much everything. If this doesn't sound like a blast I don't know what is wrong with you honestly. Also scroll down to see when this shibang starts and also write it down in your calender. Tell your friends you won't be free and not to call because this is the real deal. YOU are a creater, explorer, and experimenter. This is the weekend you can show the WORLD! <i class="fas fa-globe-americas"></i>
                 </p>
             </div>
-            <div id="schedule" class="main-content">
+            <div id="schedule" class="main-content w3-center">
                 <h1 class="content-title">Schedule</h1>
-                <div class="dates">
-                    <div id="date_1">
+                <div class="w3-row schedule-content">
+                    <div class="w3-col s12 l4">
                         <h3>Registration</h3>
                         <p>Just show up!</p>
                     </div>
-                    <div id="date_2">
+                    <div class="w3-col s12 l4">
                         <h3>Start Date</h3>
                         <p>Feburary 28<sup>th</sup></p>
                     </div>
-                    <div id="date_3">
+                    <div class="w3-col s12 l4">
                         <h3>End Date</h3>
                         <p>March 1<sup>st</sup></p>
                     </div>
-                    <div id="location">
+                </div>
+                <div class="w3-row">
+                    <div class="w3-col">
                         <h3>Where to be</h3>
                         <p>Boyd 146 <b>5PM</b></p>
                     </div>
@@ -104,9 +106,12 @@
             <p> <i class="fas fa-cheese"></i> Check out <a href="https://stefantobler.com">stefantobler.com</a> <i class="fas fa-cheese"></i></p>
             <p>jk ;)</p>
         </div>
+        <!--JS for Space Nodes-->
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
+
+        <!--JS for the Sticky Navigation Bar-->
         <script src="sticky_nav.js"></script>
     </footer>
 </html>

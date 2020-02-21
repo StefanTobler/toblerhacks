@@ -40,7 +40,6 @@ html {
 
  .options {
     position: absolute;
-    margin: 0px 0px 0px 160px;
     padding: 0;
     color: #F9F1E9;
     text-align: center;
@@ -66,12 +65,12 @@ html {
  
 .demo .main-title, .options {
    text-transform: uppercase;
-   font-size: 4.2em;
-   letter-spacing: 0.1em;
+   font-size: 6.9vmin;
+   letter-spacing: 0.4em;
 }
  
 .thin {
-   font-weight: 200;
+   font-weight: lighter;
 }
  
 @media only screen and (max-width: 768px) {
@@ -90,8 +89,6 @@ html {
 #navbar {
    overflow: hidden;
    background-color: #1c1c1c;
-   left:0;
-   right:0;
    width: 100%;
 }
  
@@ -101,10 +98,17 @@ html {
    display: block;
    color: #F9F1E9;
    text-align: center;
-   padding: 25px;
-   font-size: 150%;
+   padding: 1.8% 1%;
+   font-size: 2vmin;
    text-decoration: none;
    border-bottom: 4px solid transparent;
+}
+
+.item {
+   float: none;
+   left: 50%;
+   position: absolute;
+   transform: translate(-50%, -50%);
 }
 
 #navbar a:hover {
@@ -115,7 +119,6 @@ html {
 #navbar i {
    text-transform: uppercase;
    text-decoration: none;
-   margin-right: 20%;
 }
 
  
@@ -133,14 +136,14 @@ html {
  
  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + #content {
-   padding-top: 60px;
+   padding-top: 6.2%;
 }
 
 /* Style for the rest of the page */
 
 #content p {
    color: #F9F1E9;
-   font-size: 1.5em;
+   font-size: 2.4vmin;
    margin: auto 15%;
    text-align: justify;
 }
@@ -149,7 +152,7 @@ html {
    margin: 2%;
    text-align: center;
    color: #F9F1E9;
-   font-size: 3em;
+   font-size: 4.7vmin;
 }
 
 #content .main-content {
@@ -180,44 +183,23 @@ html {
 
 /* Schedule Styling */
 
-.dates {
-   color: #F9F1E9;
-   display: grid;
-   margin-left: 15%;
-   margin-right: 15%;
-   grid-template-areas: 'title title title'
-                        'date_1 date_2 date_3'
-                        'location location location';
+#schedule p{
    text-align: center;
 }
-.dates #h1 {grid-area: title;}
-.dates #date_1 {grid-area: date_1;}
-.dates #date_2 {grid-area: date_2;}
-.dates #date_3 {grid-area: date_3;}
-.dates #location {
-   grid-area: location;
-   margin-top: 4%;
+
+#schedule h3 {
+   color: #F9F1E9;
+   font-size: 3.5vmin;
 }
 
-#date_1 p {text-align: center;}
-#date_2 p {text-align: center;}
-#date_3 p {text-align: center;}
-#location p {text-align: center;}
-
-
-.dates h3 {
-   margin-left: auto 15%;
-   font-size: 1.75em;
-}
-
-.dates p{
-   font-size: 3em;
+.schedule-content {
+   margin: auto 15%;
 }
 
 /* Sponsor Style */
 
 #sponsors a {
-   font-size: 6em;
+   font-size: 6vw;
    color: #F9F1E9;
    text-align: center;
    text-decoration: none;
@@ -227,7 +209,7 @@ html {
 
 #sponsors a:hover {
    color: lightblue;
-   font-size: 6.5em;
+   font-size: 8vw;
 }
 
 #sponsors {
@@ -238,7 +220,7 @@ html {
 #sponsors h3 {
    color: #F9F1E9;
    text-align: center;
-   font-size: 1.75em;
+   font-size: 3.5vmin;
 }
 
 
@@ -261,7 +243,7 @@ html {
    list-style: none;
 }
 #bring li {
-   font-size: 1.75em;
+   font-size: 2.4vmin;
    color: #F9F1E9;
    margin: 5px;
 }
